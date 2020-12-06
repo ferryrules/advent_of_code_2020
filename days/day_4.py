@@ -1,8 +1,7 @@
 from utils import get_data, answers, print_answers
 import re
 
-data = get_data(2020, 4)
-data = data.split('\n\n')
+data = get_data(2020, 4).split('\n\n')
 validish = 0
 mega_valid = 0
 
