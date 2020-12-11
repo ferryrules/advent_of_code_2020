@@ -1,7 +1,8 @@
 from utils import get_data, answers, print_answers
 
-data = get_data(2020, 2)
-data = data.split('\n')
+data = get_data(2020, 2).split('\n')
+
+print(data[0])
 
 count1 = 0
 count2 = 0

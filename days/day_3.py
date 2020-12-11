@@ -1,7 +1,6 @@
 from utils import get_data, answers, print_answers
 
-data = get_data(2020, 3)
-data = data.split('\n')
+data = get_data(2020, 3).split('\n')
 
 def trees_in_path(right, down):
     trees = 0

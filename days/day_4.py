@@ -5,7 +5,7 @@ data = get_data(2020, 4).split('\n\n')
 validish = 0
 mega_valid = 0
 
-def is_invalid(key, v):
+def is_valid(key, v):
     switch = {
         'byr': v.isnumeric() and 1920 <= int(v) <= 2002,
         'iyr': v.isnumeric() and 2010 <= int(v) <= 2020,
@@ -28,7 +28,7 @@ for passport in data:
             for items in passport:
                 key = items.split(':')[0]
                 value = items.split(':')[1]
-                if is_invalid(key, value):
+                if is_valid(key, value):
                     valid_count += 1
             if valid_count == 7:
                 mega_valid += 1

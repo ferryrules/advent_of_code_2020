@@ -1,7 +1,6 @@
 from utils import get_data, answers, print_answers
 
-data = get_data(2020, 1)
-data = data.split('\n')
+data = get_data(2020, 1).split('\n')
 
 for star in data:
     s = int(star)
